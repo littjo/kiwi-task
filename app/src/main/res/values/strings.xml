@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Interesting flights</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="departure">Departure:</string>
+    <string name="arival">Arival:</string>
+    <string name="duration">Duration:</string>
+    <string name="seats_left">Seats left:</string>
+</resources>

@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.flight.FlightFragment">
+
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="0dp"
+        android:layout_height="300dp"
+        android:background="@color/gray"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/destinationTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:drawableLeft="@drawable/ic_location_city"
+        android:layout_marginLeft="15dp"
+        android:drawablePadding="15dp"
+        android:layout_marginTop="15dp"
+        android:textSize="25sp"
+        app:layout_constraintHorizontal_chainStyle="spread_inside"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toLeftOf="@id/priceTextView"
+        app:layout_constraintTop_toBottomOf="@id/imageView"
+        tools:text="London" />
+
+    <TextView
+        android:id="@+id/priceTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="15dp"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/teal"
+        app:layout_constraintBottom_toBottomOf="@id/destinationTextView"
+        app:layout_constraintLeft_toRightOf="@id/destinationTextView"
+        app:layout_constraintRight_toRightOf="parent"
+        tools:text="235e" />
+
+    <TextView
+        android:id="@+id/departureCaptionTextView"
+        app:layout_constraintTop_toBottomOf="@id/destinationTextView"
+        app:layout_constraintLeft_toLeftOf="@id/destinationTextView"
+        android:layout_marginTop="15dp"
+        android:text="@string/departure"
+        android:drawableLeft="@drawable/ic_departure"
+        android:drawablePadding="15dp"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/departureTextView"
+        app:layout_constraintTop_toBottomOf="@id/destinationTextView"
+        app:layout_constraintLeft_toRightOf="@id/departureCaptionTextView"
+        app:layout_constraintTop_toTopOf="@id/departureCaptionTextView"
+        android:layout_marginLeft="15dp"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/arivalCaptionTextView"
+        app:layout_constraintTop_toBottomOf="@id/departureCaptionTextView"
+        app:layout_constraintLeft_toLeftOf="@id/destinationTextView"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_arival"
+        android:drawablePadding="15dp"
+        android:text="@string/arival"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/arivalTextView"
+        app:layout_constraintTop_toBottomOf="@id/destinationTextView"
+        app:layout_constraintLeft_toRightOf="@id/departureCaptionTextView"
+        app:layout_constraintTop_toTopOf="@id/arivalCaptionTextView"
+        android:layout_marginLeft="15dp"
+
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/durationCaptionTextView"
+        app:layout_constraintTop_toBottomOf="@id/arivalCaptionTextView"
+        app:layout_constraintLeft_toLeftOf="@id/destinationTextView"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_duration"
+        android:drawablePadding="15dp"
+        android:text="@string/duration"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/durationTextView"
+        app:layout_constraintLeft_toLeftOf="@id/departureTextView"
+        app:layout_constraintBottom_toBottomOf="@id/durationCaptionTextView"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/seatsCaptionTextView"
+        app:layout_constraintTop_toBottomOf="@id/durationCaptionTextView"
+        app:layout_constraintLeft_toLeftOf="@id/destinationTextView"
+        android:layout_marginTop="15dp"
+        android:drawableLeft="@drawable/ic_seats"
+        android:drawablePadding="15dp"
+        android:text="@string/seats_left"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <TextView
+        android:id="@+id/seatsTextView"
+        app:layout_constraintLeft_toLeftOf="@id/departureTextView"
+        app:layout_constraintBottom_toBottomOf="@id/seatsCaptionTextView"
+        android:textSize="18sp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
